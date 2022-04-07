@@ -1,0 +1,43 @@
+<h1>Dashboard</h1>
+<p class="fs-5 col-md-8">
+    Message demo, using message service and message component.
+</p>
+
+<p-messages key="lm"></p-messages>
+
+<hr class="col-3 col-md-2 mb-5">
+
+<div class="row g-5">
+    <div class="col-md-6">
+        <h2>Add global messages</h2>
+        <p-button label="Add single message" (click)="addSingle()"></p-button>&#160;
+        <p-button label="Add multiple messages" (click)="addMultiple()"></p-button>&#160;
+    </div>
+
+    <div class="col-md-6">
+        <h2>Add local messages</h2>
+        <p-button label="Add single message" (click)="addSingleLocal()"></p-button>&#160;
+        <p-button label="Add multiple messages" (click)="addMultipleLocal()"></p-button>&#160;
+    </div>
+</div>
+
+<div class="row">&#160;</div>
+
+<div class="row g-5">
+    <div class="col-md-6">
+        <p-button label="Clear all global messages" (click)="clear()"></p-button>&#160;
+    </div>
+    <div class="col-md-6">
+        <p-button label="Clear all local messages" (click)="clearLocal()"></p-button>&#160;
+    </div>
+</div>
+
+
+<div class="row">&#160;</div>
+
+<div class="row g-5">
+    <div class="col-md-12">
+        <p-button label="To next page" (click)="navigateToCreate()" icon="pi pi-chevron-right" iconPos="right"></p-button>&#160;
+    </div>
+    
+</div>
